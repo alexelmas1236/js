@@ -8,6 +8,6 @@ window.addEventListener('load', () => {
     // Escuchar el evento playerDataUpdate
     scene.events.on('playerDataUpdate', (data) => {
         // Mostrar los valores del jugador con números enteros
-        console.log(`X: ${Math.floor(data.x)}, Rot: ${Math.floor(data.rotation)}`);
+        console.log(`X: ${Math.floor(data.x)}, Rot: ${Math.floor(data.rotation)}, Score: ${gameState.score}`);
     });
 });
